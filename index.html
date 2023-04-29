@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style/style.css">
+    <title>Calculadora de salario</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="card">
+                <h1 class="title-card">Calcule o seu salário</h1>
+                <div class="wrapper">
+                    <label for="salario">Digite o seu sálario abaixo</label>
+                    <div class="input">
+                        <div class="sifrao"><span>R$</span></div> <input type="number" id="salario" name="salario">
+                    </div>
+                    <button id="btn-calc" onclick="calcSalario()">Calcular sálario</button>
+                </div>
+            </div>
+            <div id="resultado">
+                <h2 class="titulo"></h2>
+                <ul class="texto-resultado">
+                    <li>
+                        <p class="dizimo"></p>
+                    </li>
+                    <li>
+                        <p class="poupar"></p>
+                    </li>
+                    <li>
+                        <p class="se-pagar"></p>
+                    </li>
+                    <li>
+                        <p class="abundar"></p>
+                    </li>
+                    <li>
+                        <p class="dividas"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="src/JS/index.js"></script>
+</body>
+
+</html>

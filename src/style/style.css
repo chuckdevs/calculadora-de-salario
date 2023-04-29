@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    ".."
+    "card"
+    ".";
+  height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-area: card;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.title-card {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input {
+  border: 2px solid black;
+  display: grid;
+  border-radius: 5px;
+  height: 30px;
+  grid-template-columns: 25px 4fr;
+}
+input[type="number"] {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  height: 100%;
+}
+label {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sifrao {
+  background-color: gray;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+}
+#btn-calc {
+  font-size: 1.8rem;
+  background-color: blue;
+  cursor: pointer;
+  border: 3px solid black;
+  color: white;
+  border-radius: 5px;
+}
+#resultado {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: none;
+  transition: 0.3s;
+}
+#resultado h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.texto-resultado {
+  list-style: none;
+}
+ul li {
+  font-size: 2rem;
+  font-weight: 500;
+}
