@@ -2,6 +2,7 @@ const salario = document.querySelector("#salario");
 const textoResultado = document.querySelector(".texto-resultado");
 const resultado = document.querySelector("#resultado");
 const tituloResultado = document.querySelector(".titulo");
+const btnCalcular = document.querySelector("#btn-calc");
 
 function calcSalario() {
   let salarioValor = parseFloat(salario.value);
@@ -34,6 +35,8 @@ function calcSalario() {
     resultado.style.display = "flex";
   }
 }
+
+btnCalcular.addEventListener("click", calcSalario);
 /*
   let resultado =
     "Dizímo: R$" +
